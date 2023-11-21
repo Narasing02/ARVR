@@ -1,0 +1,293 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* ---------------------------------------NAvbar------------------------------------------ */
+.nav-logo {
+  width: 80px;
+}
+.nav-logo-header {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 900;
+}
+
+/* --------------------------------------------Home--------------------------------------- */
+.home-container {
+  /* background:linear-gradient(to left,#000000,#020202); */
+  /* background: rgb(2,0,36);
+background: linear-gradient(270deg, rgba(2,0,36,1) 18%, rgba(225,11,199,1) 100%, rgba(0,212,255,1) 100%); */
+  height: 95vh;
+  background-color: black;
+  display: flex;
+  gap: 30px;
+  position: relative;
+}
+
+.header-cont {
+  font-size: 60px;
+  color: aliceblue;
+  font-family: "Satisfy", cursive;
+}
+.header-cont h1 {
+  font-weight: 600;
+  font-size: 90px;
+}
+
+.header-cont p {
+  font-size: 20px;
+}
+
+@media (max-width: 977px) {
+  .home-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-cont h1 {
+    font-size: 30px;
+  }
+  .header-cont p {
+    font-size: 20px;
+  }
+  .whole-animated {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header-cont span {
+    font-size: 30px;
+  }
+
+  .whole-animated {
+    display: none;
+  }
+  @keyframes headerContent {
+    0% {
+      background-color: antiquewhite;
+      opacity: 0.5;
+      filter: blur(100px);
+      left: 0%;
+      top: 5%;
+    }
+    25% {
+      background-color: rgb(9, 86, 86);
+      left: 25%;
+      top: 25%;
+      opacity: 0.5;
+      filter: blur(100px);
+    }
+    50% {
+      background-color: rgb(1, 1, 82);
+      left: 30%;
+      top: 15%;
+      opacity: 0.5;
+      filter: blur(100px);
+    }
+    75% {
+      background-color: rgb(255, 0, 242);
+      opacity: 0.5;
+      filter: blur(100px);
+      left: 40%;
+      top: 25%;
+    }
+    100% {
+      color: #fff;
+      opacity: 0.5;
+      filter: blur(100px);
+      left: 30%;
+      top: 10%;
+    }
+  }
+}
+
+.whole-animated {
+  width: 500px;
+  height: 500px;
+  background-color: rgb(241, 227, 227);
+  position: absolute;
+
+  animation: headerContent 8s ease-out infinite;
+}
+
+@keyframes headerContent {
+  0% {
+    background-color: antiquewhite;
+    opacity: 0.5;
+    filter: blur(100px);
+    left: 0%;
+    top: 5%;
+  }
+  25% {
+    background-color: rgb(9, 86, 86);
+    left: 25%;
+    top: 25%;
+    opacity: 0.5;
+    filter: blur(100px);
+  }
+  50% {
+    background-color: rgb(1, 1, 82);
+    left: 50%;
+    top: 15%;
+    opacity: 0.5;
+    filter: blur(100px);
+  }
+  75% {
+    background-color: rgb(255, 0, 242);
+    opacity: 0.5;
+    filter: blur(100px);
+    left: 60%;
+    top: 25%;
+  }
+  100% {
+    color: #fff;
+    opacity: 0.5;
+    filter: blur(100px);
+    left: 40%;
+    top: 10%;
+  }
+}
+
+/* ------------------------------------About-ARVR---------------------------------- */
+.About-ARVR {
+  background-color: rgb(27, 23, 23);
+}
+.AR-header {
+  text-shadow: 0px 5px 0px rgb(96, 4, 101);
+}
+.About-ARVR .container p {
+  color: rgb(217, 127, 255);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+}
+.VR-container {
+  position: relative;
+}
+@media screen and (max-width: 963px) {
+  .VR-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.VR-container p {
+  color: aqua;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+}
+.VR-box1 {
+  position: absolute;
+  top: 20%;
+  right: 0%;
+  height: 300px;
+  width: 300px;
+  background: linear-gradient(to left, aquamarine, rgb(249, 127, 255));
+  filter: blur(100px);
+  opacity: 0.7;
+  border-radius: 50%;
+}
+.VR-box2 {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+
+  height: 200px;
+  width: 200px;
+  background: linear-gradient(to left, rgb(242, 127, 255), rgb(249, 127, 255));
+  filter: blur(100px);
+  opacity: 0.9;
+  border-radius: 50%;
+}
+
+@media ((min-width: 770px) and (max-width:1063px)) {
+  .Ag-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .VR-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* ------------------------------------working AR/VR------------------------------------- */
+.working-ARVR {
+  background-image: url("https://img.freepik.com/free-vector/3d-earth-graphic-symbolizing-global-trade-illustration_456031-127.jpg?w=1060&t=st=1700545338~exp=1700545938~hmac=a21f0cb9771b1d8b1bb9866b2305bfc5c5c8bed5fcbb12cdeda65d1909e2b638");
+  background-size: cover;
+  height: 80vh;
+  background-position: center;
+  background-attachment: fixed;
+
+  /* filter:grayscale(100) */
+}
+.working-AR {
+  /* background-color: black; */
+
+  color: rgb(250, 255, 255);
+}
+.working-AR-container {
+  /* background-color: black; */
+
+  width: 50%;
+  padding: 20px;
+
+  height: 80vh;
+}
+@media screen and (max-width: 1030px) {
+  .working-AR-container {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 883px) {
+  .working-AR-container {
+    width: 100%;
+    color: aqua;
+  }
+}
+
+.working-AR-container p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  color: #df86f3;
+}
+@media (max-width: 560px) {
+  .working-AR-container p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 378px) {
+  .working-AR-container p {
+    font-size: 10px;
+  }
+}
+/* --------------------------------------gallery---------------------------------- */
+.carousel-img {
+  max-width: 90vh;
+  max-height: 90vh;
+}
+
+.videos-container {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 1100px) {
+  .videos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* @media(max-width:634px){
+    .sm-product-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    } */
